@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <title>Empire Token DEX</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript" src="./timer.js"></script>
+
+</head>
+
+<body>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab2" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-home2"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                Locked
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab2" data-mdb-toggle="pill" data-mdb-target="#pills-profile2"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                Creat Your Lock
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab3" data-mdb-toggle="pill" data-mdb-target="#pills-profile3"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
+                style="font-size: 18px ; padding: 12px; ">
+                <i class="fas fa-info-circle"></i>
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content justify-content-center" id="pills-tabContent2">
+        <div class="tab-pane fade show active " id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab2">
+            <div class="box">
+                <div class="amount">
+                    <h5 class="label">Amount</h5>
+                    <div class="form-outline">
+                        <input type="number" id="typeNumber" class="form-control" readonly value="2300.12" />
+                    </div>
+                </div>
+                <div class="vesting">
+                    <h5 class="label">Vesting Period</h5>
+                    <div class="form-outline">
+                        <input type="text" id="typeText" readonly class="form-control" value="2 weeks (tax free)" />
+                    </div>
+                </div>
+                <div class="timer">
+                    <h5 class="label">Time left to claim Empire</h5>
+                    <h2 class="text-center" id="demo"></h2>
+                </div>
+                <div class="rate d-flex justify-content-between">
+                    <p class="mb-0">Rate :</p>
+                    <p class="mb-0">1 BNB = 5214.135 EMPIRE <i class="fas  fa-exchange-alt exchange"></i></p>
+                </div>
+                <div class="button text-center">
+                    <button type="button" class="btn btn-primary">WITHDRAW</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
+            <div class="box-2">
+                <div class="amount">
+                    <h5 class="label">Amount</h5>
+                    <div class="form-outline">
+                        <input type="number" id="typeNumber" class="form-control" value="2300.12" />
+                    </div>
+                </div>
+                <div class="vesting">
+                    <h5 class="label">Vesting Period</h5>
+                    <div class="select">
+                        <select>
+                            <option value="1" class="otn">2 weeks (tax free)</option>
+                            <option value="2" class="otn">4 weeks (tax free plus 5% extra tokens)</option>
+                            <option value="3" class="otn">8 weeks (tax free plus 10% extra tokens)</option>
+                            <option value="4" class="otn"> 16 weeks (tax free plus 20% extra tokens)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="timer">
+                    <h5 class="label">Token Address</h5>
+                    <div class="form-outline">
+                        <input type="text" id="typeText" class="form-control" readonly
+                            value="0x293C3Ee9ABaCb08BB8ceD107987F00EfD1539288" />
+
+                    </div>
+                </div>
+                <div class="rate d-flex justify-content-between">
+                    <p class="mb-0">You Pay :</p>
+                    <p class="mb-0">1 BNB = 5214.135 EMPIRE <i class="fas  fa-exchange-alt exchange"></i></p>
+                </div>
+                <div class="button text-center">
+                    <button type="button" class="btn btn-primary">LOCK</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile-tab3">
+            <div class="box-3">
+                <div class="info">
+                    Dear Empire Community <br><br>
+
+                    As you are all aware, part of our tokenomics was that 3 percent of the 10 percent transaction taxes
+                    are allocated for the funding of our marketing and development. We have seen such a nice volume in
+                    the recent weeks, and thus, have an ample amount of tax tokens that can cover future development of
+                    our platforms as well as marketing and listings.
+<br><br>
+                    However, in our bid not to hurt the chart, we have decided to sell a portion of these tax tokens to
+                    private investors who are willing to hold long term. While this is a good strategy, we still hold a
+                    great amount of tokens that have only been accumulating. This is why we have a strategized a new
+                    plan that will address this problem and, at the same time, reward our holders.
+<br><br>
+                    We are currently working on a contract for the dashboard where our investors can buy these tax
+                    tokens directly from us tax-free but with vesting period. And since we have temporarily turned off
+                    our reflections, we have come up with a plan to incentivize our holders as those who are willing to
+                    hold for a longer period will be getting EMPIRE rewards from this new feature!
+                    <br><br>
+                    ✅ 2 weeks (tax free)<br>
+                    ✅ 4 weeks (tax free plus 5% extra tokens)<br>
+                    ✅ 8 weeks (tax free plus 10% extra tokens)<br>
+                    ✅ 16 weeks (tax free plus 20% extra tokens)<br>
+                    <br>
+                    💰Minimum purchase: 1 BNB worth<br>
+                    💰Maximum purchase: 40 BNB worth<br>
+                    <br>
+                    Likewise, we will soon allow a mechanism where people can lock in their tokens for a period of time
+                    for an added value. More of this feature to be announced soon.
+<br><br>
+                    Empire believes in the importance of transparency, and we build trust by being honest to our
+                    community. Rest assured that the team will continue to value your faith in us and keep working hard
+                    for your investments.
+                    <br>
+                    Keep Climbing!
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
